@@ -1,10 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "../features/counter/counterSlice";
 
 export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+  reducer: {},
 });
 
 // run -  npx create-react-app cra-redux --template redux   - to create react app with redux, where you have  redux-toolkit already set-up for you.
