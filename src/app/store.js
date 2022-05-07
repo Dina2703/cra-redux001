@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import todoReducer from "../features/todoSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    todos: todoReducer,
+  },
 });
 
 // run -  npx create-react-app cra-redux --template redux   - to create react app with redux, where you have  redux-toolkit already set-up for you.
